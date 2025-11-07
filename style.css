@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.cv-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    box-sizing: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cv-header h1{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    font-size: 24px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+.section h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-left: 4px solid #3498db;
+    padding-left: 10px;
+}
+
+.personal-date p {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #bdc3c7;
+    margin: 30px 0;
+}
+
+.experience-item,
+.education-item{
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.date-company,
+.date-school{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.date-company strong,
+.date-school strong {
+    color:  #2c3e50;
+    min-width: 180px;
+}
+
+.missions, 
+.details,
+.skills-list,
+.interests-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.missions li,
+.details li,
+.skills-list li,
+.interests-list li {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.missions li:before,
+.details li:before,
+.skills-list li:before,
+.interests-list li:before{
+    content:".";
+    color: #3498db;
+    font-weight: bold;
+    position: absolute;
+    left: -15px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-widht: 768px) {
+    .cv-container {
+        padding: 20px;
+    }
+
+    /* .image{
+        display: none;
+    } */
+
+    .date-company,
+    .date-school{
+        flex-direction: column;
+    }
+
+    .date-company strong,
+    .date-school strong{
+        margin-bottom: 5px;
+    }
+}
