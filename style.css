@@ -64,9 +64,13 @@ body {
     border: none;
     border-top: 1px solid #000;
     margin: 15px 0;
+ }
+
+.row-seperator {
+    height: 1px;
+    background: #000;
+    margin: 5px 0;
 }
-
-
 .table-row {
     display: flex;
     margin-bottom: 8px;
